@@ -1,0 +1,8 @@
+.heading{
+    width:80%;
+    font-size:30px;
+}
+body{
+    background:linear-gradient(orange 0%, blue 100% );
+    font-family: 'Mochiy Pop P One', sans-serif;
+}

@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title> 
+Image recognition using neural Networks
+        </title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <div class="container">
+            <center>
+                <h1 class="btn btn-success heading">
+                    Image recognition
+                </h1>
+                <h4 style=" color:crimson;">
+Modal is trained to identify the following objects
+                </h4>
+                <br>
+<b>
+    Face <i class="far fa-smile-beam"></i>
+    <hr>
+    Headphones <i id="i1"class="fas fa-headphones"></i>  <hr>
+    Books<i class="fas fa-book"></i>
+    <hr>
+    Tab <i class="fas fa-tablet-alt"></i>
+    <hr>
+    Cube <i class="fas fa-cube"></i><hr>
+</b>
+<br>
+<label>
+    Webcam View
+</label>
+
+<div id="camera_display"> 
+
+</div>
+<br>
+<div id ="snapshot"> 
+
+</div>
+<br>
+<button class="btn btn-default" onclick="picture_click()"> 
+    Caputure Image
+</button>
+<br>
+<br>
+<button class="btn btn-warning" onclick="identify_picture()">
+    Identify Object
+</button>
+<br>
+<br>
+<p style=" color:antiquewhite; font-size:20px;">
+    Object:<span id="object"></span>
+</p>
+<br>
+<p style="color:antiquewhite; font-size:20px;">
+    Accuracy:<span id="accuracy"></span>
+</p>
+            </center>
+
+        </div>
+        <script src="main.js"></script>
+       
+    </body>
+</html>
